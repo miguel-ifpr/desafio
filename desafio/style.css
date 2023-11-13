@@ -1,0 +1,105 @@
+
+:root {
+    --cianoazul: hsl(171, 27%, 54%);
+    --branco: hsl(0, 0%, 100%);
+    --ciano: hsl(170, 97%, 53%);
+    --cinnzaclaro: hsl(217, 12%, 63%);
+    --azulescuro: hsl(213, 19%, 18%);
+    --preto: hsl(216, 12%, 8%);
+    --secundario: hsl(213deg, 20%, 22%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--preto);
+}
+.hidden {
+    display: none;
+}
+.card {
+    background-color: var(--azulescuro);
+    border-radius: 1rem;
+    width: 350px;
+}
+.card_container {
+    padding: 2rem;
+}
+.icon {
+    background-color: var(--secundario);
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.title {
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+.description {
+    font-size: 14px;
+    color: var(--ciano);
+    margin-bottom: 1rem;
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.ratings span {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    color: var(--ciano);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.ratings span:hover {
+    background-color: var(--cianoclaro);
+    color: var(--branco);
+}
+.submit_btn {
+    width: 100%;
+    color: var(--branco);
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--cianoazul);
+    padding: 0.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.submit_btn:hover {
+    background-color: var(--branco);
+    color: var(--cianoazul);
+}
+.thank_section {
+    text-align: center;
+}
+.chip {
+    background-color: var(--secundario);
+    width: fit-content;
+    margin: 1rem auto;
+    color: var(--cianoazul);
+    font-size: 14px;
+    padding: 0.7rem;
+    border-radius: 2rem;
+}
+.checked {
+    background-color: var(--cianoazul) !important;
+    color: var(--branco) !important;
+}
